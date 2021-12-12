@@ -72,3 +72,26 @@ FROM companies
 JOIN employees
 ON employees.Company = companies.Name
 WHERE employees.Role = "Graphic Designer";
+
+#Count & Filter
+
+#1
+SELECT name, max(Points)
+FROM students;
+
+#2
+SELECT avg(Points)
+FROM students;
+
+#3
+SELECT count(ID)
+FROM students
+WHERE Points=500;
+
+#4
+SELECT name
+FROM students
+WHERE name like "%s%";
+
+#5
+SELECT * FROM students ORDER BY Points DESC;
