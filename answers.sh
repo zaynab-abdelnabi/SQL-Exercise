@@ -64,7 +64,7 @@ SELECT employees.Name
 FROM employees
 JOIN companies
 ON employees.Company = companies.Name
-WHERE companies.Date > 2000;
+WHERE companies.Date < 2000;
 
 #3
 SELECT companies.Name
