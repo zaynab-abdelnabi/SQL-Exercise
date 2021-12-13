@@ -34,7 +34,7 @@ CREATE TABLE graduates(
     Age INT,
     Gender TEXT,
     Points INT,
-    Graduation DATE
+    Graduation TEXT
 );
 
 #2
