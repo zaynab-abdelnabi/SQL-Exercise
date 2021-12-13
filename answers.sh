@@ -75,9 +75,11 @@ WHERE employees.Role = "Graphic Designer";
 
 #Count & Filter
 
-#1
+#1 to get the first person of highest score
 SELECT name, max(Points)
 FROM students;
+#1 to get all the students of the highest score
+SELECT Name FROM students WHERE Points=(SELECT max(Points) FROM students);
 
 #2
 SELECT avg(Points)
